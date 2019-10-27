@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="left-bar">
+
+            <span class="header__menu-button">&#9776</span>
+
+            <h1>CodeJam - Pallete</h1>
+        </div>
+
+
+        <span class="header__right-button">&#8285</span>
+
+
+    </header>
+    <main class="main">
+        <div class="left-block">
+            <div class="instruments">
+                <div class="instruments__list">
+                    <img src="./assets/icons/paint.svg" alt="" class="instruments__list_img">
+                    <span class="instruments__list_text">Paint bucket</span>
+                </div>
+                <div class="instruments__list">
+                    <img src="./assets/icons/chose-color.svg" alt="" class="instruments__list_img">
+                    <span class="instruments__list_text">Choose color </span>
+                </div>
+                <div class="instruments__list">
+                    <img src="./assets/icons/move.svg" alt="" class="instruments__list_img">
+                    <span class="instruments__list_text">Move</span>
+                </div>
+                <div class="instruments__list">
+                    <img src="./assets/icons/transform.svg" alt="" class="instruments__list_img">
+                    <span class="instruments__list_text">Transform</span>
+                </div>
+            </div>
+            <div class="colors">
+                <div class="colors__list current">
+
+                    <span class="colors__list_text">Current color</span>
+                </div>
+                <div class="colors__list prev">
+
+                    <span class="colors__list_text">Prev color </span>
+                </div>
+                <div class="colors__list red">
+
+                    <span class="colors__list_text">Red</span>
+                </div>
+                <div class="colors__list blue">
+
+                    <span class="colors__list_text">Blue</span>
+                </div>
+            </div>
+        </div>
+   
+            <canvas id="canvas" width="512" height="512"></canvas>
+     
+        <div class="size-block">
+            <form>
+
+                <div class="size-block__btn" id="4">
+                    <input type="radio" id="4x4" name="contact" checked>
+                    <label for="4x4">4x4</label>
+                </div>
+                <div class="size-block__btn" id="32">
+                    <input type="radio" id="32x32" name="contact">
+                    <label for="32x32">32x32</label>
+                </div>
+                <div class="size-block__btn" id="256">
+                    <input type="radio" id="256x256" name="contact">
+                    <label for="256x256">256x256</label>
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <script type="text/javascript" src="./assets/4x4.json"></script>
+    <script type="text/javascript" src="./assets/32x32.json"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
